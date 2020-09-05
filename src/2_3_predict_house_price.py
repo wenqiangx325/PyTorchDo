@@ -51,8 +51,13 @@ if __name__ == "__main__":
         a.grad.data.zero_()
         b.grad.data.zero_()
 
-    plt.plot(x, y, "b*")
+    plt.plot(x_test, y_test, "ro")
+    plt.plot(x_test, a.data * x_test + b.data, "go")
+
+    plt.plot(x_train, y_train, "b*")
     plt.plot(x_train, a.data * x_train + b.data)
     plt.show()
+
+
 
 
