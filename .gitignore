@@ -1,2 +1,8 @@
-.venv/
+# ignore .venv folder which folder for Python virtual environment
+.venv
+
+# ignore vscode folder which folder for VSCode setting
 .vscode
+
+# ignore data foder which folder for dataset
+data
